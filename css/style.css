@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap");
+
 html {
   background: linear-gradient(
       to bottom right,
@@ -16,11 +17,12 @@ html {
     );
   background-size: 0.25rem 0.25rem;
 }
+
 body {
-  width: 100%;
-  max-width: 700px;
+  width: 95%; /* Adjust width for better spacing */
+  max-width: 900px; /* Increased width */
   font-family: sans-serif;
-  padding-bottom: 1vw;
+  padding: 2vw 1vw; /* Increased padding for better spacing */
   margin: 0 auto;
   box-shadow: 0 0 300px black;
 }
@@ -29,7 +31,7 @@ h1 {
   column-span: all;
   background: black;
   color: white;
-  font-size: 8vw;
+  font-size: 7vw; /* Adjusted to prevent overlapping */
   margin: 0;
   padding-left: 1rem;
 }
@@ -39,10 +41,12 @@ h1 {
   padding-right: 1rem;
   padding-bottom: 1rem;
 }
+
 .article-meta * {
   display: inline-block;
   vertical-align: middle;
 }
+
 .article-meta svg {
   float: right;
   margin-top: -3rem;
@@ -53,12 +57,15 @@ h1 {
   box-sizing: border-box;
   transition: 0.75s;
 }
+
 .article-meta svg:hover {
   filter: saturate(1) contrast(1);
 }
+
 .article-meta p {
   margin: 0.25rem 0;
 }
+
 .article-meta span {
   text-decoration: underline;
   cursor: pointer;
@@ -80,21 +87,43 @@ figure {
   padding: 0 1rem;
   margin: 0;
 }
+
 img {
   width: 100%;
   filter: grayscale(1) contrast(0.75);
   transition: 0.75s;
-  
 }
+
 img:hover {
   filter: grayscale(0) contrast(1);
 }
+
 figcaption {
   font-size: 0.75rem;
 }
 
 p {
-  line-height: 1.5rem;
-  padding: 0 1.5rem;
+  line-height: 1.7rem; /* Increased for better readability */
+  padding: 0 2rem; /* Increased padding */
   font-family: "Noticia Text", serif;
+}
+
+/* Adjustments for recipe links */
+a {
+  display: block;
+  margin: 1rem 0; /* Added spacing between links */
+  font-size: 1.1rem; /* Increase link size */
+  text-decoration: none;
+  color: #000; /* Darker text for readability */
+}
+
+a:hover {
+  color: #333; /* Subtle hover effect */
+}
+
+/* Footer improvements */
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
